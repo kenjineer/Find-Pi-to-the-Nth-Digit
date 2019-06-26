@@ -1,10 +1,11 @@
 #include <iomanip>
+#include <math.h>
 #include <iostream>
 using namespace std;
 
 int main(void)
 {
-  double pi = 3.141592653589793;
+  double pi = 4.0 * atan(1.0);
   int place;
   bool limit = true;
 
@@ -17,10 +18,9 @@ int main(void)
       limit = false;
     else if (place > 15 || place < 0)
     {
-      cout << "Please enter a valid value."<<endl;
+      cout << "Decimal place out of bounds! Please enter a valid value."<<endl;
       limit = true;
     }
   }
-  place += 1;
-  cout << setprecision(place) << pi;
+  cout << "Pi in " << place << " decimal places is: " << setprecision(place + 1) << pi;
 }
