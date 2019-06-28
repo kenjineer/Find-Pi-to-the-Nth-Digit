@@ -9,7 +9,8 @@ def Precision(num, place):
         return result
 
 while limit:
-    place = int(input("Enter how many decimal places of Pi to be displayed [LIMIT 15]: "))
+    place = int(
+        input("Enter how many decimal places of Pi to be displayed [LIMIT 15]: "))
 
     if place < 16 and place >= 0:
         limit = False
@@ -17,4 +18,4 @@ while limit:
     else:
         print("Decimal place out of bounds! Please enter a valid value.")
 
-print("Pi in ", place, " decimal places is: ", result) 
+print("Pi in ", place, " decimal places is: ", result)

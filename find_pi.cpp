@@ -18,7 +18,7 @@ int main(void)
       limit = false;
     else
     {
-      cout << "Decimal place out of bounds! Please enter a valid value."<<endl;
+      cout << "Decimal place out of bounds! Please enter a valid value." << endl;
     }
   }
   cout << "Pi in " << place << " decimal places is: " << setprecision(place + 1) << pi;
