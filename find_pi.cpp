@@ -16,10 +16,9 @@ int main(void)
 
     if (place < 16 && place >= 0)
       limit = false;
-    else if (place > 15 || place < 0)
+    else
     {
       cout << "Decimal place out of bounds! Please enter a valid value."<<endl;
-      limit = true;
     }
   }
   cout << "Pi in " << place << " decimal places is: " << setprecision(place + 1) << pi;

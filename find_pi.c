@@ -16,10 +16,9 @@ int main(void)
 
         if (place < 16 && place >= 0)
             limit = false;
-        else if (place > 15 || place < 0)
+        else
         {
             printf("Decimal place out of bounds! Please enter a valid value.\n");
-            limit = true;
         }
     }
     printf("Pi in %i decimal places is: %.*f", place, place, pi);

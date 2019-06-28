@@ -14,8 +14,7 @@ while limit:
     if place < 16 and place >= 0:
         limit = False
         result = Precision(pi, place)
-    elif place > 15 or place < 0:
+    else:
         print("Decimal place out of bounds! Please enter a valid value.")
-        limit = True
 
 print("Pi in ", place, " decimal places is: ", result) 
